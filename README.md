@@ -1,6 +1,4 @@
-## Description:
-
-**App Name:** LocalTranscribe
+# LocalScribe
 
 **Overview:**
 LocalTranscribe is a lightweight web application built using Python, HTML, and CSS that facilitates local transcription directly within the browser. With LocalTranscribe, users can effortlessly transcribe audio files into text format, generating both a timecoded `.srt` file and a plain text file (`.txt`) with the transcript. This app is designed to provide a seamless transcription experience while prioritizing privacy and security by performing all transcription tasks locally on the user's device.
