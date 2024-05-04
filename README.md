@@ -37,12 +37,10 @@ Here are the steps to set up a development environment for LocalScribe.
 - **Python 3.7 or higher**: Ensure Python and pip (Python package installer) are installed.
 - **FFmpeg**: Required for audio processing by Whisper.
 
-## Environment Setup
+## Environment Setup (MacOS)
 
 ### 1. Install Homebrew
 Install Homebrew, which is used to install FFmpeg and can be used to manage other packages:
-
-- **MacOS**:
   ```bash
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   
