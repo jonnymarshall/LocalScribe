@@ -77,8 +77,6 @@ Navigate to the directory containing your app.py and run the application:
 ```
 python app.py
 ```
-Your Flask server should start, and you can typically access it in your web browser at http://localhost:5000.
-
 Once the server is running, navigate to http://localhost:5000 in your web browser to use the application. You can drag and drop audio files to be transcribed.
 
 ### Additional Notes
