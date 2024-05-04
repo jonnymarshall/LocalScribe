@@ -41,8 +41,9 @@ Here are the steps to set up a development environment for LocalScribe.
 
 ### 1. Install Homebrew
 Install Homebrew, which is used to install FFmpeg and can be used to manage other packages:
-  ```bash
+```
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
   
 ### 2. Install Python via Homebrew
 Once Homebrew is installed, you can use it to install Python:
