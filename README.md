@@ -1,7 +1,7 @@
 # LocalScribe
 
 **Overview:**
-LocalScribe is a lightweight web application built using Python, HTML, and CSS that facilitates local transcription directly within the browser. With LocalTranscribe, users can effortlessly transcribe audio files into text format, generating both a timecoded `.srt` file and a plain text file (`.txt`) with the transcript. This app is designed to provide a seamless transcription experience while prioritizing privacy and security by performing all transcription tasks locally on the user's device.
+LocalScribe is a lightweight web application built using Python, HTML, and CSS that uses OpenAI's Whisper to do local, fully private transcription directly within the browser. With LocalTranscribe, users can effortlessly transcribe audio files into text format, generating both a timecoded `.srt` file and a plain text file (`.txt`) with the transcript. This app is designed to provide a seamless transcription experience while prioritizing privacy and security by performing all transcription tasks locally on the user's device.
 
 **Key Features:**
 1. **Local Transcription:** Perform transcription tasks directly within the user's browser, ensuring data privacy and security.
@@ -26,3 +26,61 @@ Alice, a podcaster, frequently conducts interviews and needs accurate transcript
 
 **Conclusion:**
 LocalTranscribe offers a seamless and privacy-focused solution for users seeking local transcription capabilities. By leveraging modern web technologies and performing all processing tasks locally, LocalTranscribe ensures data privacy while delivering accurate and accessible transcripts for various audio files.
+
+***
+# Development Setup
+
+Here are the steps to set up a development environment for LocalScribe.
+
+## Prerequisites
+
+- **Python 3.7 or higher**: Ensure Python and pip (Python package installer) are installed.
+- **FFmpeg**: Required for audio processing by Whisper.
+
+## Environment Setup
+
+### 1. Install Homebrew
+Install Homebrew, which is used to install FFmpeg and can be used to manage other packages:
+
+- **MacOS**:
+  ```bash
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  
+### 2. Install Python via Homebrew
+Once Homebrew is installed, you can use it to install Python:
+```
+brew install python
+```
+This will install the latest stable version of Python. After installing, you can verify the installation by checking the version:
+
+```
+python3 --version
+```
+
+### 3. Install FFmpeg
+FFmpeg is required for handling audio files. Install it using the appropriate method for your operating system:
+```
+brew install ffmpeg
+sudo apt install ffmpeg
+```
+
+### 4. Install Flask
+```
+pip install Flask
+```
+
+### 5. Install Whisper
+```
+pip install git+https://github.com/openai/whisper.git
+```
+
+### 6. Run the Flask Application
+Navigate to the directory containing your app.py and run the application:
+```
+python app.py
+Your Flask server should start, and you can typically access it in your web browser at http://localhost:5000.
+```
+Once the server is running, navigate to http://localhost:5000 in your web browser to use the application. You can drag and drop audio files to be transcribed.
+
+### Additional Notes
+For production environments, additional configuration for security and performance might be necessary. This guide is intended for setting up a development environment only.
