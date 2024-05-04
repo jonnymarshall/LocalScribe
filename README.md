@@ -50,7 +50,6 @@ Once Homebrew is installed, you can use it to install Python:
 brew install python
 ```
 This will install the latest stable version of Python. After installing, you can verify the installation by checking the version:
-
 ```
 python3 --version
 ```
@@ -59,7 +58,6 @@ python3 --version
 FFmpeg is required for handling audio files. Install it using the appropriate method for your operating system:
 ```
 brew install ffmpeg
-sudo apt install ffmpeg
 ```
 
 ### 4. Install Flask
@@ -73,11 +71,13 @@ pip install git+https://github.com/openai/whisper.git
 ```
 
 ### 6. Run the Flask Application
+
 Navigate to the directory containing your app.py and run the application:
 ```
 python app.py
-Your Flask server should start, and you can typically access it in your web browser at http://localhost:5000.
 ```
+Your Flask server should start, and you can typically access it in your web browser at http://localhost:5000.
+
 Once the server is running, navigate to http://localhost:5000 in your web browser to use the application. You can drag and drop audio files to be transcribed.
 
 ### Additional Notes
